@@ -66,7 +66,7 @@ class Detail extends Component {
                     <h2>Skill 3:  {this.state.pet.skill_three}</h2>
                 </fieldset>
                 <h3>Likes: {this.state.pet.like} </h3>
-                <button disabled={this.state.liked} onClick={this.addLike}>Like this pet</button>
+                <button disabled={this.state.pet.liked} onClick={this.addLike}>Like this pet</button>
                 <button onClick={this.delete}>Adopt this pet</button>
             </>
         )
